@@ -1,0 +1,10 @@
+---
+ansible_inxi: {
+  # The inxi options to print
+  options: "-Ffmns --slots --usb",
+  # The AUR compile user
+  owner: {
+    name: "feffi",
+    group: "feffi"
+  },
+}

@@ -1,0 +1,13 @@
+---
+- name: Install neofetch
+  pacman:
+    name: "neofetch"
+    state: present
+
+- name: install inxi from AUR
+  aur:
+    use: "yay"
+    name: "inxi-git"
+    skip_installed: true
+  become: yes
+  become_user: "{{ ansible_inxi.owner.name }}"

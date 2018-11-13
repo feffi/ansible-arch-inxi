@@ -1,0 +1,19 @@
+---
+galaxy_info:
+  author: Kevin Wennemuth
+  description: Ansible role to print inxi and neofetch results ;-).
+  license: MIT
+  min_ansible_version: 2.7.0.0
+  platforms:
+  - name: ArchLinux
+    versions:
+    - all
+  - name: BlackArch
+    versions:
+    - all
+  galaxy_tags:
+    - system
+    - shell
+    - packages
+    - config
+dependencies: []

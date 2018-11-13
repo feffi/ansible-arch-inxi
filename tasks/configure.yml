@@ -1,0 +1,14 @@
+---
+- name: Get inxi result
+  shell: "inxi {{ ansible_inxi.options }}"
+  register: inxi_result
+
+- name: Get neofetch result
+  shell: "neofetch"
+  register: neofetch_result
+
+- debug:
+    msg: "{{ inxi_result.stdout_lines }}"
+
+- debug:
+    msg: "{{ neofetch_result.stdout_lines }}"

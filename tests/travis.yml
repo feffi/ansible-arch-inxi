@@ -1,0 +1,13 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+  vars:
+    ansible_inxi:
+      # The inxi options to print
+      options: "-Ffmns --slots --usb"
+      # The AUR compile user
+      owner:
+        name: "feffi"
+        group: "feffi"
+  roles:
+    - { role: ansible-inxi }
