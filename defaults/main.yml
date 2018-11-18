@@ -6,5 +6,5 @@ ansible_inxi: {
   owner: {
     name: "feffi",
     group: "feffi"
-  },
+  }
 }
